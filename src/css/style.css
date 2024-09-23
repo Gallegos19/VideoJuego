@@ -1,0 +1,122 @@
+/* Estilos generales */
+body {
+    font-family: 'Press Start 2P', cursive; /* Fuente retro */
+    background: #1a1a1a; /* Fondo oscuro */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #00ff00; /* Color verde brillante */
+    user-select: none; /* Evitar selección de texto */
+}
+
+.container {
+    text-align: center;
+    background: #222; /* Fondo de la caja */
+    border: 3px solid #00ff00; /* Borde verde */
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5); /* Sombra verde */
+    padding: 20px;
+}
+
+/* Títulos */
+h1 {
+    color: #00ff00; /* Color verde */
+    margin: 0;
+    text-shadow: 2px 2px #000; /* Sombra de texto */
+}
+
+p#puntaje {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00ff00;
+    margin: 10px 0;
+}
+
+/* Estilos del canvas */
+#gameCanvas {
+    border: 4px solid #00ff00; /* Borde verde */
+    border-radius: 8px;
+    background: #111; /* Fondo oscuro del canvas */
+}
+
+/* Estilos para Game Over */
+#gameOverScreen {
+    background: rgba(255, 0, 0, 0.8); /* Fondo rojo semi-transparente */
+    border: 1px solid #ff0000; /* Borde rojo */
+    color: #fff; /* Texto blanco */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5); /* Sombra roja */
+}
+
+#victoryModal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 255, 0, 0.8); /* Fondo verde semi-transparente */
+    z-index: 1000;
+}
+
+#victoryModal div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #222; /* Fondo oscuro */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Estilos para mensajes */
+#gameOverMessage, #winMessage {
+    margin: 0;
+    font-size: 32px; /* Tamaño de fuente grande */
+    text-shadow: 2px 2px #000; /* Sombra de texto */
+}
+
+/* Botones */
+button {
+    background: #00ff00; /* Color verde brillante */
+    color: #000; /* Texto negro */
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+    font-family: 'Press Start 2P', cursive; /* Fuente retro para botones */
+}
+
+button:hover {
+    background: #00cc00; /* Verde más oscuro al pasar el mouse */
+    transform: scale(1.05); /* Efecto de zoom */
+}
+
+/* Estilos para pantalla de Ganar */
+#winScreen {
+    background: rgba(0, 255, 0, 0.8); /* Fondo verde semi-transparente */
+    border: 1px solid #00ff00; /* Borde verde */
+    color: #000; /* Texto negro */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5); /* Sombra verde */
+}
+
+#nextLevelButton {
+    background: #00ff00; /* Color verde brillante */
+    color: #000; /* Texto negro */
+}
+
+/* Estilos específicos para niveles */
+#levelDisplay {
+    font-size: 20px;
+    color: #00ff00;
+    margin: 10px 0;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <title>BrickOut</title>
+</head>
+<body>
+    <div class="container">
+        <h1 >BrickOut</h1>
+        <div>
+            <p>Puntaje</p>
+            <p id="puntaje">0</p>
+            <p>Nivel: <span id="nivel">1</span></p>
+
+        </div>
+        <div id="gameOverScreen" style="display:none; text-align: center;">
+            <h1 id="gameOverMessage" style="font-size: 50px;">GAME OVER</h1>
+            <button id="restartButton" onclick="restartGame()">Reiniciar Juego</button>
+        </div>
+        <!-- Pantalla de Ganar -->
+        <div id="winScreen" style="display:none; text-align: center;">
+            <h1 id="winMessage" style="font-size: 50px;">¡Ganaste el nivel!</h1>
+            <button id="nextLevelButton" onclick="nextLevel()">Siguiente Nivel</button>
+            <button id="restartButton" onclick="restartGame()">Reiniciar Juego</button>
+        </div>
+        <canvas id="gameCanvas" width="800" height="500"></canvas>
+        <!-- Modal de Victoria -->
+        <div id="victoryModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.5);">
+            <div style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); background:white; padding:20px; border-radius:10px; text-align:center;">
+                <h2>¡Ganaste el juego!</h2>
+                <button id="closeVictoryButton" onclick="closeVictoryModal()">Cerrar</button>
+            </div>
+        </div>
+
+    </div>
+    <script type="module" src="src/main.js"></script>
+</body>
+</html>
